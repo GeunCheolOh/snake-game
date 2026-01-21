@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #222; }
+        canvas { background: #111; border: 2px solid #fff; }
+        h1 { color: #fff; text-align: center; }
+        #restartBtn, #speedSelect { display: block; margin: 10px auto; }
+        #ranking { color: #fff; margin-top: 20px; text-align: center; }
+        #speedSelect { font-size: 16px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Snake Game</h1>
+        <canvas id="game" width="400" height="400"></canvas>
+        <button id="restartBtn">재시작</button>
+        <select id="speedSelect">
+            <option value="200">0.5x</option>
+            <option value="100" selected>1x</option>
+            <option value="50">2x</option>
+            <option value="33">3x</option>
+        </select>
+        <p style="color:white;text-align:center">화살표 키로 조작하세요!</p>
+        <div id="ranking"></div>
+        <script src="snake.js"></script>
+    </div>
+</body>
+</html>
